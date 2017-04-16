@@ -7,5 +7,17 @@ Hadoop send similar key element to same reducer.
 Before reducder get call, we can employ combiner to create a list of CNN model and serialized  them and another combiner based on 
 different key to ensemble and serialized RNN.
 
-In reducer we can perform ensebling of two different deep neural nets using test dataset stored in a distributed cache.
-The project look like a bit complicated but i am sure its not going to be that much complicated.
+In reducer we can perform ensembling of two different deep neural nets using test dataset stored in a distributed cache. the trained models
+need to be deserialized properly.
+
+Initailly the models are designed to handle text and vision data. model designed for vision data can be suitably modified to handle any numeric data. 
+
+the models are designed and developed to solve multiclass classification problem.
+
+As output function I have used softmax function in order to get the normalized output. Softmax function helps me to get the generalized
+distribution of output classes given the data. that is we are calculating P(Y|X).  Nature of true supervised discriminative model. Under
+the assumption is the data are coming from identical distribution.
+
+text data has both short and long term linear dependency and vision data has local neighorhood dependency. Both LSTM RNN and CNN can perfectly model this relationship. Therefore they perform really well in text analytics and computer vision problems like object detection
+
+The project look like a bit complicated but careful evaluation will make it seem easy and normal.
