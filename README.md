@@ -20,4 +20,7 @@ the assumption is the data are coming from identical distribution.
 
 text data has both short and long term linear dependency and vision data has local neighorhood dependency. Both LSTM RNN and CNN can perfectly model this relationship. Therefore they perform really well in text analytics and computer vision problems like object detection
 
+For cost function I have used cross entropy. Entropy is a way to measure the randomness of random variables. Uniform random variable has highest entropy as the masses are uniformly distributed across all point of uncertainity. This is the max uncertainity is achievable. The
+ model tries to reduce the cross entropy given an input data. Because we want to reduce the unorderedness in the output layer given the input. We want one node in output layer group only one class reduces the entropy to zero.
+
 The project look like a bit complicated but careful evaluation will make it seem easy and normal.
