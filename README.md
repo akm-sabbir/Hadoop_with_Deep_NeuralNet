@@ -23,4 +23,6 @@ text data has both short and long term linear dependency and vision data has loc
 For cost function I have used cross entropy. Entropy is a way to measure the randomness of random variables. Uniform random variable has highest entropy as the masses are uniformly distributed across all point of uncertainity. This is the max uncertainity is achievable. The
  model tries to reduce the cross entropy given an input data. Because we want to reduce the unorderedness in the output layer given the input. We want one node in output layer group only one class reduces the entropy to zero.
 
+One more thing I would like to do in this project is to follow the functional programming paradigm as much as possible. Minimizing the usage of assignment operator, loop, increasing the usage of higher order function which is not possible in java as it does not treat function as a first class component, but python it is possible and it does treat function as a first class component, increasing the usage of tail recursion, closure and curried function can really improve the quality of the code and can help writing reusable codes. Writing a reusable code is really a required thing.
+
 The project look like a bit complicated but careful evaluation will make it seem easy and normal.
