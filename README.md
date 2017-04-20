@@ -25,4 +25,6 @@ For cost function I have used cross entropy. Entropy is a way to measure the ran
 
 One more thing I would like to do in this project is to follow the functional programming paradigm as much as possible. Minimizing the usage of assignment operator, loop, increasing the usage of higher order function which is not possible in java as it does not treat function as a first class component, but python it is possible and it does treat function as a first class component, increasing the usage of tail recursion, closure and curried function can really improve the quality of the code and can help writing reusable codes. Writing a reusable code is really a required thing.
 
+One thing I need to mention is distributed deep learning completely depend on distributive optimization algorithm. But I am not planning to use or writing a distributive SGD or LBFGS here. I am just trying to implement an ensembled model. The two are completely different models.
+
 The project look like a bit complicated but careful evaluation will make it seem easy and normal.
